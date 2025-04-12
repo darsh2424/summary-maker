@@ -1,0 +1,7 @@
+Django>=4.2
+djangorestframework>=3.14
+pymupdf>=1.22
+python-pptx>=0.6.21
+requests>=2.31
+sentence-transformers>=2.2.2
+Pillow>=10.0
