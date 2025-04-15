@@ -111,9 +111,38 @@ export default function ChatApp() {
   return (
     <div style={{ display: "flex", height: "100vh", backgroundColor: "#121212", color: "white" }}>
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <header style={{ padding: "16px", textAlign: "center", fontWeight: "bold", backgroundColor: "#1e1e1e" }}>
-          {mode === "chat" ? "💬 AI Chat Summarizer" : "📄 PPT Generator"}
-        </header>
+      <header style={{
+  padding: "16px",
+  backgroundColor: "#1e1e1e",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  position: "relative",
+  fontWeight: "bold"
+}}>
+  <div>{mode === "chat" ? "💬 AI Chat Summarizer" : "📄 PPT Generator"}</div>
+
+  <div style={{
+    position: "absolute",
+    right: "16px",
+    fontSize: "14px",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px"
+  }}>
+      <a
+      href="https://your-link.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: "#0af", textDecoration: "none" }}
+    >
+      Manual
+    </a>
+    👤 <span>Username</span>
+  
+  </div>
+</header>
+
 
         {/* Chat Area */}
         <div style={{ flex: 1, overflowY: "auto", padding: "16px", display: "flex", flexDirection: "column", gap: "10px" }}>
